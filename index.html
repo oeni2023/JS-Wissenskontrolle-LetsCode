@@ -11,25 +11,44 @@
 <body>
 
 <header>
-    <h1 class="page-title">JavaScript Wissenskontrolle - Let's code  </h1>
+    <h1 class="page-title">JavaScript Wissenskontrolle - Let's code</h1>
 </header>
 <main>
+    <!--    INPUT-SECTION-->
     <section class="input-section">
-        <div class="input-field">
-            input-filed
-        </div>
-        <div class="validation-field">
-            validation-field
-        </div>
-        <div class="validate-button-field">
-            validation-button
-        </div>
+        <form class="input-form">
+            <div class="input-field">
+                input-filed
+                <input type="text" id="i-text">
+                <label for="i-text">Input text</label>
+            </div>
+            <div class="validation-field">
+                validation-field
+                <select id="i-select" >
+                    <option hidden disabled selected value> -- select an option -- </option>
+                    <option value="ausgefüllt">ausgefüllt</option>
+                    <option value="numerisch">numerisch</option>
+                    <option value="zwischen 10 und 20 Zeichen">zwischen 10 und 20 Zeichen</option>
+                    <option value="enthält ein 'X', eine '3' und ein '$'">enthält ein "X", eine "3" und ein "$"</option>
+                </select>
+                <label for="i-select">Options</label>
+            </div>
+            <div class="validate-button-field">
+                validation-button
+                <input type="submit" id="i-submit">
+                <label for="i-submit">Validate input</label>
+            </div>
+        </form>
     </section>
+
+    <!--    OUTPUT-SECTION-->
     <section class="output-section">
         <div class="output-field">
             output-field
         </div>
     </section>
+
+    <!--    LOG-SECTION-->
     <section class="log-section">
         <div class="log-field">
             log-field

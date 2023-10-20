@@ -12,6 +12,11 @@
     justify-content: flex-start;
 }
 
+.input-form {
+    display: flex;
+    width: 100%;
+}
+
 .input-field {
     background-color: grey;
     padding: 10px;
