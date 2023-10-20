@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS - Wissenscheck</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
@@ -14,17 +15,38 @@
     <h1 class="page-title">JavaScript Wissenskontrolle - Let's code</h1>
 </header>
 <main>
+    <!--    TESTING-SECTION-->
+    <hr>
+    <h3 class="test"> --- TESTING AREA --- </h3>
+    <div class="test">
+        <input type="text" id="t-text">
+        <label for="t-text">test input</label>
+        <select id="t-select" onchange="getOptions()">
+            <option hidden disabled selected value> -- select an option -- </option>
+            <option value="ausgefüllt">ausgefüllt</option>
+            <option value="numerisch">numerisch</option>
+            <option value="zwischen 10 und 20 Zeichen">zwischen 10 und 20 Zeichen</option>
+            <option value="enthält ein 'X', eine '3' und ein '$'">enthält ein "X", eine "3" und ein "$"</option>
+        </select>
+        <button id="t-button" onclick="tester()">test button</button>
+        <div class="test" id="t-out">
+            output comes here!
+        </div>
+    </div>
+    <h3 class="test"> --- TESTING AREA --- </h3>
+    <hr>
+
     <!--    INPUT-SECTION-->
     <section class="input-section">
         <form class="input-form">
             <div class="input-field">
                 input-filed
-                <input type="text" id="i-text">
+                <input type="text" id="i-text" onchange="getInput()">
                 <label for="i-text">Input text</label>
             </div>
             <div class="validation-field">
                 validation-field
-                <select id="i-select" >
+                <select id="i-select" onchange="getOptions()">
                     <option hidden disabled selected value> -- select an option -- </option>
                     <option value="ausgefüllt">ausgefüllt</option>
                     <option value="numerisch">numerisch</option>
@@ -33,17 +55,17 @@
                 </select>
                 <label for="i-select">Options</label>
             </div>
-            <div class="validate-button-field">
-                validation-button
-                <input type="submit" id="i-submit">
-                <label for="i-submit">Validate input</label>
-            </div>
         </form>
+        <div class="validate-button-field">
+            validation-button
+            <input type="submit" id="i-submit" onclick="doValidation()">
+            <label for="i-submit">Validate input</label>
+        </div>
     </section>
 
     <!--    OUTPUT-SECTION-->
     <section class="output-section">
-        <div class="output-field">
+        <div class="output-field" id="o-text">
             output-field
         </div>
     </section>

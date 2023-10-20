@@ -1,3 +1,13 @@
+/** Testing */
+.t-out {
+    background-color: antiquewhite;
+}
+
+h3.test {
+    color: red;
+}
+
+
 
 /** GENERAL */
 .page-title {
@@ -14,7 +24,9 @@
 
 .input-form {
     display: flex;
-    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
 }
 
 .input-field {
