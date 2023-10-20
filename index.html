@@ -16,41 +16,15 @@
 </header>
 
 <main>
-<!--    &lt;!&ndash;    TESTING-SECTION&ndash;&gt;-->
-<!--    <hr>-->
-<!--    <h3 class="test"> -&#45;&#45; TESTING AREA -&#45;&#45; </h3>-->
-<!--    <div class="test">-->
-<!--        <input type="text" id="t-text">-->
-<!--        <label for="t-text">test input</label>-->
-<!--&lt;!&ndash;        <select id="t-select" onchange="getOptions()">&ndash;&gt;-->
-<!--        <select id="t-select">-->
-<!--            <option hidden disabled selected value> &#45;&#45; select an option &#45;&#45; </option>-->
-<!--            <option value="filled">ausgefüllt</option>-->
-<!--            <option value="number">numerisch</option>-->
-<!--            <option value="von10to20Zeichen">zwischen 10 und 20 Zeichen</option>-->
-<!--            <option value="containXand3and$">enthält ein "X", eine "3" und ein "$"</option>-->
-<!--        </select>-->
-<!--        <button id="t-button" onclick="validateInput()">test button</button>-->
-<!--        <div class="test" id="t-out">-->
-<!--            output comes here!-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <h3 class="test"> -&#45;&#45; TESTING AREA -&#45;&#45; </h3>-->
-<!--    <hr>-->
-
     <!--    INPUT-SECTION-->
     <section class="input-section">
         <form class="input-form">
             <div class="input-field">
-                input-filed
-<!--            <input type="text" id="i-text" onchange="getInput()">-->
-                <input type="text" id="i-text" onchange="getInput()">
+                <input type="text" id="i-text">
                 <label for="i-text">Input text</label>
             </div>
             <div class="validation-field">
-                validation-field
-<!--            <select id="i-select" onchange="getOptions()">-->
-                <select id="i-select" onchange="getOptions()">
+                <select id="i-select">
                     <option hidden disabled selected value> -- select an option -- </option>
                     <option value="filled">ausgefüllt</option>
                     <option value="number">numerisch</option>
@@ -61,7 +35,6 @@
             </div>
         </form>
         <div class="validate-button-field">
-            validation-button
             <input type="submit" id="i-submit" onclick="validateInput()">
             <label for="i-submit">Validate input</label>
         </div>
@@ -69,7 +42,7 @@
 
     <!--    OUTPUT-SECTION-->
     <section class="output-section">
-        <h3>Validation result:</h3><br>
+        <h3>Validation result:</h3>
         <div class="output-field" id="o-text">
 
         </div>
@@ -77,7 +50,7 @@
 
     <!--    LOG-SECTION-->
     <section class="log-section">
-        <h3>Log:</h3><br>
+        <h3>Log:</h3>
         <div class="log-field" id="l-text">
 
         </div>
