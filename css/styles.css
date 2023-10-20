@@ -1,4 +1,56 @@
+
+/** GENERAL */
 .page-title {
     color: cadetblue;
     font-family: sans-serif;
+}
+
+/** INPUT section */
+.input-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.input-field {
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.validation-field {
+    background-color: #de3aff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.validate-button-field {
+    background-color: #6C8C39FF;
+    padding: 10px;
+    margin: 10px;
+}
+
+/** OUTPUT section */
+.output-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.output-field {
+    background-color: #aaffa6;
+    padding: 10px;
+    margin: 10px;
+}
+
+/** LOG section*/
+.log-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.log-field {
+    background-color: #a6fcff;
+    padding: 10px;
+    margin: 10px;
 }
